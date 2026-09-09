@@ -1,0 +1,57 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "at2_experiments"
+version = "0.0.1"
+description = "A short description of the project."
+authors = [
+  { name = "parisa kalaki" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+dependencies = [
+    "36120-26sp-group17-25969686-package==0.5.0",
+    "lightgbm>=4.7.0",
+    "loguru",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pip",
+    "pytest",
+    "python-dotenv",
+    "requests>=2.34.2",
+    "ruff",
+    "scikit-learn>=1.9.0",
+    "tqdm",
+    "typer",
+    "xgboost>=3.4.1",
+]
+requires-python = "==3.12.11"
+
+
+[tool.ruff]
+src = ["at2_experiments"]
+include = ["pyproject.toml", "at2_experiments/**/*.py"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["at2_experiments"]
+
+[[tool.uv.index]]
+url = "https://test.pypi.org/simple/"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.1",
+    "seaborn>=0.13.2",
+]
+
+
+[tool.uv]
+environments = ["sys_platform == 'darwin'"]
