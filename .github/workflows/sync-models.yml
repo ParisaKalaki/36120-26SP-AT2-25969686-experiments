@@ -6,6 +6,7 @@ on:
     paths:
       - "models/comfort_climate/**.joblib"
       - "models/weather_hazard/**.joblib"
+  workflow_dispatch: {}
 
 jobs:
   sync-models:
