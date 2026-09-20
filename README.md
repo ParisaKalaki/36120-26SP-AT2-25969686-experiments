@@ -80,6 +80,7 @@ the metrics produced in the notebooks.
 
 ## Project Organization
 
+```bash
 ├── notebooks/
 │ ├── comfort_climate/ <- CCI experimentation notebook
 │ └── weather_hazard/ <- WHC experimentation notebook
@@ -96,6 +97,7 @@ the metrics produced in the notebooks.
 ├── tests/ <- Unit tests for at2_experiments
 ├── pyproject.toml <- Project dependencies and configuration
 └── uv.lock <- Locked dependency versions
+```
 
 ## Setup Instructions
 
