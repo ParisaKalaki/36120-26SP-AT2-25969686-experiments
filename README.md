@@ -161,14 +161,14 @@ uv run pytest -v
 
 Core dependencies (see `pyproject.toml` for full list and versions):
 `pandas`, `numpy`, `scikit-learn`, `xgboost`, `matplotlib`, `seaborn`,
-`requests`, `36120-26sp-group17-25969686-package` (extended AT1 package,
+`requests`, `36120-26sp-ml-utils-25969686`,
 published to TestPyPI).
 
 ## Custom Package
 
 This project extends and uses the custom Python package originally
-developed for AT1 (`player_prediction`, published as
-`36120-26sp-group17-25969686-package` on TestPyPI). See that package's
+developed for AT1 and published as
+`36120-26sp-ml-utils-25969686` on TestPyPI). See that package's
 own repository and README for details on the generic utilities added
 during this extension (`transformations.py`, `evaluation.py`,
 `exploration.py`).
