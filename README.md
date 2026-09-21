@@ -25,6 +25,10 @@ retrieved from the Open-Meteo Historical Weather API, and are deployed
 as REST endpoints via a companion FastAPI repository (see
 [36120-26SP-AT2-25969686-api](#) — link to be added once created).
 
+## Architecture
+
+![Weather Intelligence API Architecture](reports/architecture.jpeg)
+
 ## Model Artefacts
 
 The trained models are saved as Joblib artefacts and used by the companion
