@@ -155,6 +155,42 @@ uv sync
    saves the resulting model artefact to the appropriate `models/`
    subfolder.
 
+## API Usage
+
+The deployed Weather Intelligence API is available on Render and provides CCI and WHC predictions.
+
+**API documentation:** [Swagger UI](https://three6120-26sp-at2-25969686-api.onrender.com/docs)
+
+### Health check
+
+```bash
+curl https://three6120-26sp-at2-25969686-api.onrender.com/health
+```
+
+### CCI prediction
+
+Returns D+1, D+2, and D+3 comfort predictions for a supplied date.
+
+```bash
+curl "https://three6120-26sp-at2-25969686-api.onrender.com/predict/index/comfort_climate?date=2025-12-20"
+```
+
+### WHC prediction
+
+Returns the D+7 weather hazard category.
+
+```bash
+curl "https://three6120-26sp-at2-25969686-api.onrender.com/predict/category/weather_hazard?date=2025-12-20"
+```
+
+### Model metadata
+
+```bash
+curl https://three6120-26sp-at2-25969686-api.onrender.com/model-metadata
+```
+
+The API accepts historical dates within the supported data period; 2026+ dates are reserved as unseen production data.
+
 ## Running Tests
 
 ```bash
