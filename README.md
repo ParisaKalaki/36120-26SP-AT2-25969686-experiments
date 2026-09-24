@@ -116,7 +116,7 @@ dependency management.
 2. **Clone this repository and enter it:**
 
 ```bash
-   git clone <repository-url>
+   git clone https://github.com/ParisaKalaki/36120-26SP-AT2-25969686-experiments.git
    cd 36120-26SP-AT2-experiments
 ```
 
