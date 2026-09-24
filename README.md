@@ -117,7 +117,7 @@ dependency management.
 
 ```bash
    git clone https://github.com/ParisaKalaki/36120-26SP-AT2-25969686-experiments.git
-   cd 36120-26SP-AT2-experiments
+   cd 36120-26SP-AT2-25969686-experiments
 ```
 
 3. **Pin the Python version and create the virtual environment:**
