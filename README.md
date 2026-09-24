@@ -13,9 +13,8 @@ This repository contains the experimentation, data preparation, feature
 engineering, and model development work for two weather forecasting
 services built for Open Meteo's Weather Intelligence API:
 
-- **Climate Comfort Index (CCI)** — a regression model (Ridge Regression)
-  predicting a 0-100 outdoor comfort score, 3 days ahead, for Sydney,
-  NSW.
+- **Climate Comfort Index (CCI)** — a Ridge Regression model predicting a
+  0–100 outdoor comfort score for 1, 2, and 3 days ahead for Sydney, NSW.
 - **Weather Hazard Category (WHC)** — a multiclass classification model
   (XGBoost) predicting a hazard risk level (Low/Moderate/High/Extreme
   Risk), exactly 7 days ahead, for Sydney, NSW.
@@ -23,7 +22,7 @@ services built for Open Meteo's Weather Intelligence API:
 Both models are trained on historical weather observations (2010-2025)
 retrieved from the Open-Meteo Historical Weather API, and are deployed
 as REST endpoints via a companion FastAPI repository (see
-[36120-26SP-AT2-25969686-api](#) — link to be added once created).
+[36120-26SP-AT2-25969686-api](https://github.com/ParisaKalaki/36120-26SP-AT2-25969686-api).
 
 ## Architecture
 
@@ -128,11 +127,10 @@ dependency management.
    uv venv
 ```
 
-4. **Install dependencies** (including the extended AT1 package,
-   `36120-26sp-group17-25969686-package`, published to TestPyPI):
+4. **Install the project dependencies:**
 
 ```bash
-   uv sync --index https://test.pypi.org/simple/ --index-strategy unsafe-best-match
+uv sync
 ```
 
 5. **Register the Jupyter kernel:**
